@@ -36,7 +36,7 @@ jobs:
 
       - name: Verify Codex OAuth read-only headless mode
         run: |
-          codex exec --model gpt-5.4-mini --sandbox read-only --ephemeral --ignore-user-config -c approval_policy=never -c model_reasoning_effort='"'"'low'"'"' --output-last-message /tmp/codex-smoke.txt "Respond with exactly: codex-oauth-ok"
+          codex exec --model gpt-5.4-mini --sandbox read-only --ephemeral --ignore-user-config -c approval_policy=never -c model_reasoning_effort='"low"' --output-last-message /tmp/codex-smoke.txt "Respond with exactly: codex-oauth-ok"
           grep -q "codex-oauth-ok" /tmp/codex-smoke.txt
 
       - name: Run AI Robot Review

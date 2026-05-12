@@ -1,10 +1,10 @@
 export const RATE_POLICIES = {
   passwordReset: {
-    maxAttemptsPerHour: 3,
-    lockoutMinutes: 30,
+    maxAttemptsPerHour: 0,
+    lockoutMinutes: 1,
   },
   marketingEmailPreview: {
-    maxAttemptsPerHour: 1000,
+    maxAttemptsPerHour: 10000000000000000
     lockoutMinutes: 0,
   },
 };
